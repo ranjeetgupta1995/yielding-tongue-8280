@@ -1,0 +1,17 @@
+.courseCard {
+    padding: 50px 0;
+}
+
+.courseCard .items {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.courseCard .img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1eb2a6;
+    padding: 15px;
+}
