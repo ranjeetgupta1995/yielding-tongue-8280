@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
 import { coursesCard } from '../../dummydata';
-import './courses.css';
+import Title from '../common/title/Title';
 
-const CoursesCard = () => {
+const HAbout = () => {
   return (
     <>
-      <section className='coursesCard'>
-        <div className='container grid2'>
-            {coursesCard.map((val) => (
+      <section className='homeAbout'>
+        <div className='container'>
+        <Title subtitle="our courses" title="explore our popular online courses" />
+        <div className='coursesCard'>
+        <div className='grid2'>
+            {coursesCard.slice(0, 3).map((val) => (
                 <div className='items'>
                     <div className='content flex'>
                         <div className='left'>
@@ -51,9 +54,12 @@ const CoursesCard = () => {
                 </div>
             ))}
         </div>
+      </div>
+        </div>
       </section>
     </>
   )
 }
 
-export default CoursesCard;
+export default HAbout;
+
