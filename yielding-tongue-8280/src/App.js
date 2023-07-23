@@ -1,20 +1,17 @@
 import React from 'react'
-import './App.css'
+import './App.css';
+import AllRouters from './allRouters/AllRouters';
 import Header from './components/common/header/Header'
-import { Routes, Route } from "react-router-dom";
-import About from './components/about/About';
-import Home from './components/home/Home';
+import Footer from './components/common/footer/Footer';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" exact Component={Home} />
-        <Route path="/about" exact Component={About} />  
-      </Routes>
-    </div>
+      <AllRouters />
+      <Footer />
+    </>
   )
 }
 
-export default App
+export default App;
